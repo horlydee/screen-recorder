@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready to record"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recording quality (Low recommended for your device):"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/qualityGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/qualityLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low (480p, 15fps) — smoothest, least lag"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/qualityBalanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balanced (720p, 24fps)" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Recording"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+</LinearLayout>
